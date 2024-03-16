@@ -1,0 +1,23 @@
+# N 1
+import csv
+with open("C:\\Users\\kids01\\Desktop\\Вариант 27\\astronaut_time.csv") as t:
+    reader=csv.reader
+    headers=next(reader)
+    reader=list(reader)
+    h=list(i.strip.split(',') for i in t.readlines())
+    for x in h:
+        if x>=2:
+            print(h[x])
+
+
+# N 2
+t=open("C:\\Users\\kids01\\Desktop\\Вариант 27\\astronaut_time.csv")
+h=list(map(int, t.readlines()))
+numberStation = csv.numberStation
+cabinNumber = next(numberStation)
+timeNow = list(cabinNumber)
+
+
+for x in t:
+        print('На станции ' reader 'в каюте' cabinNumber 'восстановлено время. Актуальное время:' timeNow)
+
